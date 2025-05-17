@@ -49,6 +49,12 @@ public class AssetManagementInfo {
 		this.purchasedate = purchasedate;
 	}
 	
+	@Override
+	public String toString() {
+		return "AssetManagementInfo [id=" + id + ", assetname=" + assetname + ", assettype=" + assettype
+				+ ", serialnumber=" + serialnumber + ", purchasedate=" + purchasedate + "]";
+	}
+	
 	
 	
 
