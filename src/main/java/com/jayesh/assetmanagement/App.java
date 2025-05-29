@@ -23,7 +23,8 @@ public class App {
 
 	private void updateAsset() {
 		
-		
+		UpdateAssets updateAssets = new UpdateAssets();
+		updateAssets.getClass();
 	}
 
 	
