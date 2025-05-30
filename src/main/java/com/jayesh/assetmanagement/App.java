@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class App {
 	
-	
 	static Scanner scanner = new Scanner(System.in);
 	
 
@@ -27,6 +26,12 @@ public class App {
 		updateAssets.getClass();
 	}
 
+	private void deleteAsset() {
+		
+		DeleteAsset deleteAsset = new DeleteAsset();
+		deleteAsset.getClass();
+		
+	}
 	
 	
 	public static void main(String[] args) {
@@ -37,7 +42,7 @@ public class App {
         int a;
       
         do {
-			System.out.println("\n1. Add New Asset \n2. View All Assets \n3. Update Asset \n4. Exit \n Enter Your Choice Option Number:");
+			System.out.println("\n1. Add New Asset \n2. View All Assets \n3. Update Asset \n4. Delete Asset \n5. Exit \n Enter Your Choice Option Number:");
         	int option = scanner.nextInt();
         	
         	switch (option) {
@@ -56,6 +61,10 @@ public class App {
 					break;
 					
 				case 4:
+					app.deleteAsset();
+					break;
+					
+				case 5:
 					System.exit(0);
 					break;
 	        	
@@ -71,8 +80,6 @@ public class App {
         
         
     }
-
-	
 	
 	
 }

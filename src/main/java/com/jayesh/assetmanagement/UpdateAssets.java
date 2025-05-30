@@ -14,6 +14,7 @@ import jakarta.validation.ConstraintViolationException;
 
 public class UpdateAssets {
 	
+	@SuppressWarnings({ "deprecation", "resource" })
 	public UpdateAssets() {
 		
 		

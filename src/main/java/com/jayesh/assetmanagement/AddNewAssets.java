@@ -15,7 +15,7 @@ import jakarta.validation.ConstraintViolationException;
 
 public class AddNewAssets {
 	
-	@SuppressWarnings("deprecation")
+	@SuppressWarnings({ "deprecation", "resource" })
 	public AddNewAssets() {
 		
 		try {
@@ -23,8 +23,9 @@ public class AddNewAssets {
 			//Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
 	        
 	        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MM-yyyy");
+	        
 	        Assets assets = new Assets();
-	        Scanner scanner = new Scanner(System.in);
+			Scanner scanner = new Scanner(System.in);
 	        
 	        Configuration configuration = new Configuration();
 	        configuration.configure();
